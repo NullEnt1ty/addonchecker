@@ -8,7 +8,6 @@ addonchecker.config.addons =
 		download = "http://github.com/wiremod/advdupe2",
 		folder = "lua/advdupe2"
 	},
-	*/
 
 	{
 		title = "Wiremod",
@@ -17,14 +16,14 @@ addonchecker.config.addons =
 	},
 
 	{
-		title = "Easy Entity Inspector",
-		wsid = "195065185"
+		title = "Wiremod - Extras",
+		download = "http://github.com/wiremod/wire-extras",
+		file = "lua/wire/uwsvn_load.lua"
 	},
 
-	/*
 	{
-		title = "Sad Violin Death Sound",
-		wsid = "138064846"
+		title = "Easy Entity Inspector",
+		wsid = "195065185"
 	}
 	*/
 }

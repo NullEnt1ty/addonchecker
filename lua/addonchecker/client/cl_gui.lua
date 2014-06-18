@@ -15,7 +15,7 @@ function addonchecker.gui:Rebuild()
 	frame:Center()
 	frame:SetTitle(addonchecker.name)
 	frame:SetSizable(true)
-	-- frame:SetDeleteOnClose(false)
+	frame:SetDeleteOnClose(false)
 	frame:MakePopup()
 
 	local scrollPanel = frame:Add("DScrollPanel")
