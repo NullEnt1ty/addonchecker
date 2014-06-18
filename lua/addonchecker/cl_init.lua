@@ -1,6 +1,7 @@
 include("sh_init.lua")
 include("config.lua")
-include("client/cl_addon.lua")
 include("client/cl_font.lua")
+include("client/cl_settings.lua")
+include("client/cl_addon.lua")
 include("client/cl_gui.lua")
 include("client/vgui/daddon.lua")

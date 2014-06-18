@@ -54,17 +54,17 @@ function PANEL:SetStatus(status)
 	self.imgStatus:SetImage(t.image)
 	self.imgStatus:SetToolTip(t.tooltip)
 
-	if status == addonchecker.status.NOT_FOUND then
+	if status == addonchecker.status.NOT_FOUND and (self:GetDownloadURL() or self:GetWorkshopID()) then
 		self.imgDownload:Show()
 	end
 end
 
 function PANEL:OpenDownloadPage()
 	local url = self:GetDownloadURL() or self:GetWorkshopID() and "http://steamcommunity.com/sharedfiles/filedetails/?id=" .. self:GetWorkshopID()
-	
-	if not url then return end
 
-	gui.OpenURL(url)
+	if url then
+		gui.OpenURL(url)
+	end
 end
 
 derma.DefineControl("DAddon", "", PANEL, "DPanel")
